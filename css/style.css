@@ -13443,3 +13443,7 @@ ol.commentlist li .star-rating {
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
   }
+
+  .defaultimg {
+      filter: blur(3px) !important;
+  }
