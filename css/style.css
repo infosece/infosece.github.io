@@ -2827,7 +2827,7 @@ blockquote:before {
 .logo-footer img {
     height: auto;
 	width: auto;
-	max-width: 140px;
+	max-width: 200px;
 }
 .logo-header span,
 .logo-footer span {
