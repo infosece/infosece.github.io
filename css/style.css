@@ -2827,7 +2827,7 @@ blockquote:before {
 .logo-footer img {
     height: auto;
 	width: auto;
-	max-width: 200px;
+	max-width: 140px;
 }
 .logo-header span,
 .logo-footer span {
@@ -13453,5 +13453,10 @@ ol.commentlist li .star-rating {
     border-radius: 5px;
     margin: 0;
     box-shadow: 0px 0px 3px 2px #86bc42;
+  }
+
+  /* Outline */
+  span, a, input, button {
+      outline: 0;
   }
 
