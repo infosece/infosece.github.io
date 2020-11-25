@@ -13524,33 +13524,42 @@ ol.commentlist li .star-rating {
       transform: scale(1.05);
   }
 
-  .custom-about-project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .custom-about-color {
     color: white;
 }
-
-.custom-about-img {
-    max-width: 100%;
-    padding: 10%;
-    border-radius: 10%;
+.c-about-img img{
+    max-width: 50%;  
+    text-align: center;  
 }
 
-.custom-about-text{
-    text-align: left;
-    align-self: center;
-    margin-top: 10%;
-}
+@media screen and (min-width: 980px){
+    .custom-about-project {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+         "banner text";
+    }
+    .custom-about-img {
+        text-align: center;
+        grid-area: banner;
+        align-self: center;
+        margin: 0;
+    }
+    .custom-about-img img{
+        height: 100%;
+    }
 
-.c-about-right {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-}
-
-.c-about-img {
-    max-width: 25%;
+    .custom-about-text {
+        text-align: left;
+        align-self: center;
+        padding: 5%;
+    }
+    .c-about-right {
+        text-align: center;
+    }   
+    .c-about-img img{
+        max-width: 30%;
+    }
 }
