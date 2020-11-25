@@ -13523,3 +13523,34 @@ ol.commentlist li .star-rating {
   .zoom-proex:hover {
       transform: scale(1.05);
   }
+
+  .custom-about-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.custom-about-color {
+    color: white;
+}
+
+.custom-about-img {
+    max-width: 100%;
+    padding: 10%;
+    border-radius: 10%;
+}
+
+.custom-about-text{
+    text-align: left;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.c-about-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.c-about-img {
+    max-width: 25%;
+}
