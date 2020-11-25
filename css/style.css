@@ -7217,9 +7217,6 @@ a,
         margin: 5px;
         border-bottom: none;
     }
-    .dropdown-menu > li > a {
-        border-bottom: 1px solid black;
-    }
   }
 /* Box Shadow */
 
