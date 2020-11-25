@@ -7211,6 +7211,16 @@ a,
     border-radius: 0px;
     padding: 0px;
 }
+@media screen and (max-width: 980px) {
+    .dropdown-menu > li {
+        text-align: left;
+        margin: 5px;
+        border-bottom: none;
+    }
+    .dropdown-menu > li > a {
+        border-bottom: 1px solid black;
+    }
+  }
 /* Box Shadow */
 
 /* black */
