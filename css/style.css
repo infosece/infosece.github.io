@@ -10338,6 +10338,9 @@ ul[class*="list-"]{
 .icon-content {
     overflow: hidden;
 }
+.icon-content > p{
+    color: #494949;
+}
 /* icon box left aligh */
 
 .icon-bx-wraper.left .icon-bx-xl,
@@ -13481,3 +13484,10 @@ ol.commentlist li .star-rating {
       outline: 0;
   }
 
+  .zoom-proex {
+      transition: transform 0.5s;
+  }
+
+  .zoom-proex:hover {
+      transform: scale(1.05);
+  }
