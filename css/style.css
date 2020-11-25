@@ -13536,7 +13536,7 @@ ol.commentlist li .star-rating {
 @media screen and (min-width: 980px){
     .custom-about-project {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
          "banner text";
@@ -13555,6 +13555,7 @@ ol.commentlist li .star-rating {
         text-align: left;
         align-self: center;
         padding: 5%;
+        grid-area: text;
     }
     .c-about-right {
         text-align: center;
