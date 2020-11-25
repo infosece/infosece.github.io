@@ -9496,6 +9496,26 @@ ul[class*="list-"]{
 	color:#fff;
 }
 /*== COUNTERUP ===*/
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numeros {
+    display: flex;
+    align-items: baseline;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.numeros span {
+    color: #86BC42 !important;
+    margin-left: 3px;
+}
+
+.counter {
+    border: none !important;
+}
+
 .counter {
     position: relative;
 }
