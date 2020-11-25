@@ -7239,6 +7239,13 @@ a,
 .site-button-link.facebook.hover:active{
 	color:#3b5998;
 }
+
+.site-button-link.facebook.hover:hover,
+.site-button-link.facebook.hover:focus,
+.site-button-link.facebook.hover:active{
+	color:#3b5998;
+}
+
 .site-button-link.google-plus.hover:hover,
 .site-button-link.google-plus.hover:focus,
 .site-button-link.google-plus.hover:active{
@@ -7404,6 +7411,7 @@ a,
 	background-color:#00a834;
 	color:#fff;
 }
+
 @media only screen and (max-width: 991px) {
     .button-layout .site-button-link,
 	.button-layout .site-secondry,

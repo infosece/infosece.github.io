@@ -10496,6 +10496,18 @@ ul[class*="list-"]{
     -ms-transform: skewX(20deg);
     transform: skewX(20deg);
 }
+
+.dlab-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dlab-box img {
+    border-radius: 4px;
+}
+
+
 .dlab-box[class*="border-"],
 .dlab-info[class*="border-"] {
     border-color: #eee;
