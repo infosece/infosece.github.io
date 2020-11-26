@@ -13529,8 +13529,16 @@ ol.commentlist li .star-rating {
     color: white;
 }
 .c-about-img img{
-    max-width: 50%;  
+    max-width: 35%;  
     text-align: center;  
+}
+.custom-about-text {
+    align-self: center;
+    padding: 5%;
+}
+
+.custom-about-project.text-black.text-center.section-head {
+    margin: 0;
 }
 
 @media screen and (min-width: 980px){
