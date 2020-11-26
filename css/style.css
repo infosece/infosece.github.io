@@ -13572,3 +13572,7 @@ ol.commentlist li .star-rating {
         max-width: 30%;
     }
 }
+
+img {
+    pointer-events: none;
+}
