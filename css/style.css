@@ -13576,3 +13576,15 @@ ol.commentlist li .star-rating {
 img {
     pointer-events: none;
 }
+
+.footer-copyright{
+    background: #86BC42;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.footer-copyright b {
+    color: #fff;
+}
