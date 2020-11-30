@@ -13588,3 +13588,40 @@ img {
 .footer-copyright b {
     color: #fff;
 }
+
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.div-flex .text {
+    padding: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+    max-width: 700px;
+}
+
+.div-flex img {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media screen and (min-width: 850px){
+    .div-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .div-flex .text {
+        padding: 15px;
+        text-align: justify;
+        margin-right: 20px;
+    }
+
+    .div-flex img {
+        max-width: 800px;
+    }
+}
