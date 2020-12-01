@@ -117,6 +117,9 @@
 body, html {
      -moz-osx-font-smoothing: grayscale;
 }
+html {
+    scroll-behavior: smooth!important;
+  }
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
