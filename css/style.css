@@ -13539,6 +13539,11 @@ ol.commentlist li .star-rating {
     align-self: center;
     padding: 5%;
 }
+.custom-about-text p{
+    text-align:justify;
+    font-size: 1.01rem;
+    font-weight: 505;
+}
 
 .custom-about-project.text-black.text-center.section-head {
     margin: 0;
