@@ -13597,6 +13597,43 @@ img {
     color: #fff;
 }
 
+.reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.reverse .text {
+    padding: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+    max-width: 500px;
+}
+
+.reserve img {
+    max-width: 500px;
+}
+
+.reverse .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reverse .text p {
+    text-align: justify;
+    font-size: 1.0rem;
+    font-weight: 505;
+    color: #494949;
+}
+
+.reverse .text span {
+    text-align: justify;
+    font-size: 1.01rem;
+    font-weight: 505;
+}
+
 .div-flex {
     display: flex;
     flex-direction: column;
@@ -13608,11 +13645,10 @@ img {
     padding: 15px;
     text-align: justify;
     margin-bottom: 15px;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 .div-flex img {
-    width: 100%;
     max-width: 500px;
 }
 
@@ -13624,7 +13660,7 @@ img {
 
 .div-flex .text p {
     text-align: justify;
-    font-size: 1.01rem;
+    font-size: 1.0rem;
     font-weight: 505;
     color: #494949;
 }
@@ -13638,7 +13674,7 @@ img {
 @media screen and (min-width: 850px){
     .div-flex {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 15px 0px 15px 0px;
     }
 
@@ -13649,6 +13685,22 @@ img {
     }
 
     .div-flex img {
+        max-width: 800px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .reverse .text {
+        padding: 15px;
+        text-align: justify;
+        margin-right: 20px;
+    }
+
+    .reverse img {
         max-width: 800px;
     }
 }
