@@ -11058,7 +11058,7 @@ footer.footer-white .footer-bottom a {
 }
 .page-content {
     margin-top: 0;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 .content-area {
     padding-top: 60px;
@@ -13616,6 +13616,25 @@ img {
     max-width: 500px;
 }
 
+.div-flex .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-flex .text p {
+    text-align: justify;
+    font-size: 1.01rem;
+    font-weight: 505;
+    color: #494949;
+}
+
+.div-flex .text span {
+    text-align: justify;
+    font-size: 1.01rem;
+    font-weight: 505;
+}
+
 @media screen and (min-width: 850px){
     .div-flex {
         flex-direction: row;
@@ -13632,4 +13651,22 @@ img {
     .div-flex img {
         max-width: 800px;
     }
+}
+
+.new-separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  h2 {
+      margin-bottom: 0;
+  }
+
+  .new-separator .separator {
+    height: 2px;
+    width: 80px;
+    margin: 10px 0px 25px 0px;
 }
