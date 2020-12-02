@@ -13596,6 +13596,16 @@ ol.commentlist li .star-rating {
         max-width: 50%!important; 
         align-self:center;
     }
+    .pillarsgif {
+        max-width: 70%; 
+        align-self:center; 
+        margin-left: 10%;
+    }
+}
+.pillarsgif {
+    max-width: 70%; 
+    align-self:center; 
+    margin-left: 0%;
 }
 
 .div-flex .pillarimg {
