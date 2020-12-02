@@ -13579,6 +13579,15 @@ ol.commentlist li .star-rating {
     .c-about-img img{
         max-width: 30%;
     }
+    .text-pr {
+        color: #96c166;
+        font-size: 3rem;
+        padding-bottom: 10px;
+    }
+    .triad {
+        padding: 2% 20% 0% 20%; 
+        margin-bottom: 0px;
+    }
 }
 
 img {
@@ -13670,8 +13679,22 @@ img {
     font-size: 1.01rem;
     font-weight: 505;
 }
+.div-flex .text {
+    padding: 3%!important;
+    margin: 4%!important;
+}
+.text {
+    border-radius: 3%!important;
+    margin: 4%;
+    text-align: justify;
+}
 
 @media screen and (min-width: 850px){
+    
+    .text {
+        font-weight:600;
+    }
+
     .div-flex {
         flex-direction: row;
         justify-content: space-around;
@@ -13679,9 +13702,10 @@ img {
     }
 
     .div-flex .text {
-        padding: 15px;
-        text-align: justify;
         margin-right: 20px;
+        font-weight:670;
+        font-size:1.1rem;
+        text-align:justify;
     }
 
     .div-flex img {
@@ -13700,9 +13724,14 @@ img {
         margin-right: 20px;
     }
 
+    .text p{
+        font-size: 1.1rem;
+    }
+
     .reverse img {
         max-width: 800px;
     }
+
 }
 
 .new-separator {
@@ -13721,4 +13750,9 @@ img {
     height: 2px;
     width: 80px;
     margin: 10px 0px 25px 0px;
+}
+
+.text-pr {
+    color: #96c166;
+    font-size: 2rem;
 }
