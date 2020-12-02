@@ -13640,6 +13640,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin: 15px 0px 15px 0px;
+    padding: 15px;
 }
 
 .reverse .text {
@@ -13677,6 +13678,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin: 15px 0px 15px 0px;
+    padding: 15px;
 }
 
 .div-flex .text {
@@ -13784,4 +13786,22 @@ img {
 .text-pr {
     color: #96c166;
     font-size: 2rem;
+}
+
+.img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-text img {
+    width: 100%;
+}
+
+.img-text img:first-child {
+    max-width: 190px;
+}
+
+.reverse-img {
+    transform: scaleX(-1);
 }
