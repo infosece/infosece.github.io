@@ -13588,6 +13588,25 @@ ol.commentlist li .star-rating {
         padding: 2% 20% 0% 20%; 
         margin-bottom: 0px;
     }
+    .triadimg {
+        max-width: 30%; 
+        align-self:center;
+    }
+    .div-flex .pillarimg {
+        max-width: 50%!important; 
+        align-self:center;
+    }
+}
+
+.div-flex .pillarimg {
+    max-width: 80%; 
+    align-self:center;
+    border-radius: 7%;
+}
+
+.triadimg {
+    max-width: 80%; 
+    align-self:center;
 }
 
 img {
