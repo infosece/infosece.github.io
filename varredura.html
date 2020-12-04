@@ -37,6 +37,13 @@
 	<link rel="stylesheet" type="text/css" href="css/layers.css">
 	<link rel="stylesheet" type="text/css" href="./plugins/revolution/revolution/css/settings.css">
 	<link rel="stylesheet" type="text/css" href="./plugins/revolution/revolution/css/navigation.css">
+
+	<style>
+		.page-content {
+    margin-top: 0;
+    padding-bottom: 0px;
+	}
+	</style>
 </head>
 <body id="bg">
 <div id="loading-area"></div>
@@ -151,7 +158,7 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 6; white-space: normal; font-size: 17px; line-height: 26px; font-weight: 500; color:#fff;font-family:'Raleway',sans-serif;border-width:0px;">VARREDURA. </div>
+										style="z-index: 6; white-space: normal; font-size: 17px; line-height: 26px; font-weight: 500; color:#fff;font-family:'Raleway',sans-serif;border-width:0px;">Como funciona a varredura. </div>
 										
 									<!-- LAYER NR. 3 -->
 									<div class="tp-caption rev-btn  rs-parallaxlevel-4" 
@@ -183,14 +190,68 @@
 			</div>        
 		</div>        
 	<!-- Slider END -->
+	<div class="new-separator">
+		<h2 class="text-uppercase">A <span class="text-primary">Varredura</span></h2>
+		<div class="separator bg-primary"></div>
+	</div>
 
+	<div class="div-flex">
+		<div class="text">
+			<p>Nessa fase é realizada uma varredura do que está presente na rede. Por exemplo, o range de IPs que é utilizado, quais os servidores existentes, os sitemas operacionais utilizados, as portas abertas, entre outras especificações.</p>
+			
+			<p>Existem diversas ferramentas para realizar esse processo de varredura, boa parte delas automatizadas. A mais conhecida se chama Nmap, que faz a varredura completa.</p>		
+		</div>
+
+		<img src="images/o_que_e_pentest1.png" alt="">
+	</div>
+
+	<div class="new-separator">
+		<h2 class="text-uppercase">O <span class="text-primary">NMAP</span> - NETWORK MAPPER</h2>
+		<div class="separator bg-primary"></div>
+	</div>
+
+	<div class="reverse">
+		<div class="text">
+			<p>Nmap é um software livre que realiza port scan desenvolvido pelo Gordon Lyon, autoproclamado hacker "Fyodor". É muito utilizado para avaliar a segurança dos computadores, e para descobrir serviços ou servidores em uma rede de computadores.</p>
+			
+			<p>O comando mais básico lista todas as informações disponíveis:</p>	
+
+			<p style="color: #86BC42; font-size: 1.2rem;">$ nmap -F site.com.br -v</p>
+			
+			<p style="align-self: baseline;">Exemplo de saída:</p>
+			
+			<img src="images/varredura1.png" alt="">
+			
+		</div>
+
+		<img src="images/o_que_e_pentest1.png" alt="">
+	</div>
+
+	<div class="text-img-center">
 		<div class="div-flex">
 			<div class="text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus lorem lorem, non rhoncus lorem eleifend at. Vestibulum viverra pretium erat ac mattis. Phasellus vitae scelerisque quam. Etiam sed diam quis lacus iaculis aliquam. Nunc eleifend, leo sed ornare rhoncus, mauris leo suscipit orci, non mattis lorem dolor sit amet justo. In posuere facilisis enim, sit amet tempor dolor placerat sed. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum a lorem sem. Phasellus in faucibus metus. Proin vitae orci id arcu rutrum tincidunt et eu dui. Vivamus sed malesuada quam. Nam id malesuada magna, eget interdum orci. Duis placerat tempor mi, ullamcorper laoreet lectus condimentum at. Donec nec pellentesque velit, eget faucibus ante.
-			</div>
+				<p style="color: #86BC42; font-size: 1.2rem;">$ nmap -Pn -sV -A 207.180.233.189 -vv</p>	
 
-			<img src="https://png.pngtree.com/png-vector/20200312/ourmid/pngtree-modern-flat-design-concept-of-team-work-design-with-characters-in-png-image_2157888.jpg" alt="">
+				<img src="images/varredura2.png" alt="">
+			</div>
 		</div>
+	</div>
+
+	<div class="new-separator">
+		<h2 class="text-uppercase">As <span class="text-primary">EXPLORAÇÕES E EXPLOITS</span>
+			</h2>
+		<div class="separator bg-primary"></div>
+	</div>
+
+	<div class="div-flex">
+		<div class="text">
+			<p>Após a etapa da varredura, encontraremos possíveis vulnerabilidades na aplicação, com isso podemos usar diversos ataques, como SQL Injection, que pode capturar informações do banco de dados; Wfuzz, que identifica as rotas presente no site, entre outros ataques.</p>
+			
+			<p>É exatamente na fase de exploração em que executamos os exploits. Um exploit geralmente é uma sequência de comandos, dados ou uma parte de um software elaborados por hackers que conseguem tirar proveito de um defeito ou vulnerabilidade. No caso, as ferramentas citadas acima utilizam desses exploits de acordo com o versionamento do sistema.</p>		
+		</div>
+
+		<img src="images/o_que_e_pentest1.png" alt="">
+	</div>
 
 	<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4">

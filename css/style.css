@@ -13805,3 +13805,7 @@ img {
 .reverse-img {
     transform: scaleX(-1);
 }
+
+.text-img-center .div-flex {
+    flex-direction: column;
+}
