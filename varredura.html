@@ -220,11 +220,11 @@
 			
 			<p style="align-self: baseline;">Exemplo de saída:</p>
 			
-			<img src="images/varredura1.png" alt="">
+			<img class="border"src="images/varredura1.png" alt="">
 			
 		</div>
 
-		<img src="images/varredura_img2.png" alt="">
+		<img class="border" src="images/varredura_img2.png" alt="">
 	</div>
 
 	<div class="text-img-center">
@@ -232,7 +232,7 @@
 			<div class="text">
 				<p style="color: #86BC42; font-size: 1.2rem;">$ nmap -Pn -sV -A 207.180.233.189 -vv</p>	
 
-				<img src="images/varredura2.png" alt="">
+				<img class="border" src="images/varredura2.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -303,6 +303,37 @@
 
 		<img class="border" src="images/varredura_teste3.png" alt="">
 	</div>
+
+	<div class="new-separator">
+		<h2 class="text-uppercase">O <span class="text-primary">Wfuzz</span>
+			</h2>
+		<div class="separator bg-primary"></div>
+	</div>
+
+	<div class="reverse">
+		<div class="text">
+			<p>O Wfuzz é uma ferramenta projetada para bruteforcing Web Applications, pode ser usada para encontrar recursos não vinculados (diretórios, servlets, scripts etc.), parâmetros bruteforce GET e POST para verificar diferentes tipos de injeções (SQL, XSS, LDAP, etc.), Parâmetros dos formulários (Usuário / Senha), Fuzzing, etc.	</p>
+			
+			<p>Em sua máquina kali existe um diretório onde fica um arquivo com as endpoints mais comuns a serem testadas. O diretório é<span class="text-primary"> usuario@usuario:~/SecLists/Discovery/Web-Content.</span> Nessa seção iremos usar a máquina virtual <a class="link" href="http://www.dvwa.co.uk/" target="blank">DVWA</a></p>	
+			
+			<p class="baseline">Digite no terminal o seguinte comando:</p>
+
+			<span class="text-primary"></p>
+		</div>
+
+		<img src="images/varredura_img3.png" alt="">
+	</div>
+
+	<div class="text-img-center">
+		<div class="div-flex">
+			<div class="text">
+				<p style="color: #86BC42; width: 563px">$ wfuzz -c -z file,common.txt --hc 404 http://127.0.0.1/DVWA-master/FUZZ</p>	
+
+				<img class="border" src="images/varredura_img5.png" alt="">
+			</div>
+		</div>
+	</div>
+
 
 	<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4">
