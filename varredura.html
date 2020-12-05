@@ -202,7 +202,7 @@
 			<p>Existem diversas ferramentas para realizar esse processo de varredura, boa parte delas automatizadas. A mais conhecida se chama Nmap, que faz a varredura completa.</p>		
 		</div>
 
-		<img src="images/o_que_e_pentest1.png" alt="">
+		<img src="images/varredura_img1.png" alt="">
 	</div>
 
 	<div class="new-separator">
@@ -224,7 +224,7 @@
 			
 		</div>
 
-		<img src="images/o_que_e_pentest1.png" alt="">
+		<img src="images/varredura_img2.png" alt="">
 	</div>
 
 	<div class="text-img-center">
@@ -250,7 +250,58 @@
 			<p>É exatamente na fase de exploração em que executamos os exploits. Um exploit geralmente é uma sequência de comandos, dados ou uma parte de um software elaborados por hackers que conseguem tirar proveito de um defeito ou vulnerabilidade. No caso, as ferramentas citadas acima utilizam desses exploits de acordo com o versionamento do sistema.</p>		
 		</div>
 
-		<img src="images/o_que_e_pentest1.png" alt="">
+		<img src="images/varredura_img3.png" alt="">
+	</div>
+
+	<div class="new-separator">
+		<h2 class="text-uppercase">O <span class="text-primary">SQL INJECTION</span>
+			</h2>
+		<div class="separator bg-primary"></div>
+	</div>
+
+	<div class="reverse">
+		<div class="text">
+			<p>Injeção de SQL (do inglês SQL Injection) é um tipo de ameaça de segurança que se aproveita de falhas em sistemas que interagem com bases de dados através de comandos SQL, onde o atacante consegue inserir uma instrução SQL personalizada e indevida dentro de uma consulta (SQL query) através da entradas de dados de uma aplicação, como formulários ou URL de uma aplicação.</p>
+			
+			<p style="align-self: center;">Site para testes de SQL Injection <a class="link" href="http://testphp.vulnweb.com" target="blank">vulnweb</a></p>		
+		</div>
+
+		<img src="images/varredura_img4.png" alt="">
+	</div>
+
+	<div class="div-flex">
+		<div class="text">
+			<p>Os testes de SQL Injection são realizados nas endpoints do site ou sistema, basicamente, endpoint é a URL do serviço. Dessa forma, iremos testar comandos no final da URL a fim de conseguir algumas informação vinda do banco de dados.</p>
+
+			<p class="baseline"><span class="span-title">1 - <a class="link" href="http://testphp.vulnweb.com/listproducts.php?cat=1 order by 12" target="blank" >Categorias</a></span></p>
+
+			<p>Ao acessar qualquer categoria, veremos uma lista de itens que podem ser manipulados via URL, assim, iremos tentar encontrar um erro utilizando o comando <span class="text-primary">1 order by 12</span>. O testes são feitos da seguinte forma: 1 order by 2, 1 order by 3, assim em diante, até encontrar o erro, nesse caso encontramos no 12, logo a tabela tem 12 colunas.</p>
+				
+		</div>
+
+		<img class="border" src="images/varredura_teste1.png" alt="">
+	</div>
+
+	<div class="reverse">
+		<div class="text">
+			<p class="baseline"><span class="span-title">2 - <a class="link" href="http://testphp.vulnweb.com/listproducts.php?cat=-1 union select 1,2,3,4,5,6,7,8,9,10,11" target="blank" >Buscando informações da tabela</a></span></p>
+
+			<p>Após encontrar o erro, podemos verificar quantas colunas tem na tabela presente no banco de dados, dessa forma, conseguimos identificar onde fica cada informação digitando o comando <span class="text-primary">-1 union select 1,2,3,4,5,6,7,8,9,10,11 </span>. Essa sequência de numeros é o número de tabelas - 1, como temos 12 tabelas, basta colocar de 1 até 11.</p>
+				
+		</div>
+
+		<img class="border" src="images/varredura_teste2.png" alt="">
+	</div>
+
+	<div class="div-flex">
+		<div class="text">
+			<p class="baseline"><span class="span-title">3 - <a class="link" href="http://testphp.vulnweb.com/listproducts.php?cat=-1 union select 1,@@version,3,4,5,6,database(),8,9,10,user()" target="blank" >Acessando informações</a></span></p>
+
+			<p>Com as informações da localização de cada coluna da tabela, podemos ver informações sigilosas da aplicação com o comando <span class="text-primary">	-1 union select 1, @@version, 3, 4, 5, 6, database(), 8, 9, 10, user() </span>. Utiliza-se a mesma sequência de números, mas a informação desejada deve ser trocada por outro comando, como no caso do número 2, 7 e 11, os quais foram substituídos a fim de descobrir a versão do sistema, o nome do banco de dados e o nome do usuário.</p>
+				
+		</div>
+
+		<img class="border" src="images/varredura_teste3.png" alt="">
 	</div>
 
 	<!-- Footer -->

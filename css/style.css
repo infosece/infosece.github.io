@@ -13809,3 +13809,23 @@ img {
 .text-img-center .div-flex {
     flex-direction: column;
 }
+
+.text .link {
+    color: #96c166;
+}
+
+.text .link:hover{
+    color: #8ed83a;
+}
+
+.span-title {
+    font-size: 1.3rem !important;
+}
+
+.baseline {
+    align-self: baseline !important;
+}
+
+.border {
+    border-radius: 4px;
+}
