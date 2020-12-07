@@ -13827,5 +13827,6 @@ img {
 }
 
 .border {
+    border: none;
     border-radius: 4px;
 }
