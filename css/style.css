@@ -13720,7 +13720,32 @@ img {
     text-align: justify;
 }
 
+.isoimg {
+    max-width: 70%!important;
+}
+.flagimg {
+    max-width: 50%;
+    align-self: center;
+}
+.opsicon {
+    width: 8%;
+}
+
 @media screen and (min-width: 850px){
+    .opsicon {
+        width: 3%;
+    }
+    .isoimg {
+        max-width: 30%!important;
+    }
+    .offimg {
+        max-width: 50%;
+        align-self: center;
+    }
+    .opsimg {
+        max-width: 80%;
+        align-self: center;
+    }
     
     .text {
         font-weight:600;
@@ -13830,3 +13855,4 @@ img {
     border: none;
     border-radius: 4px;
 }
+
