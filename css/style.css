@@ -13731,7 +13731,16 @@ img {
     width: 8%;
 }
 
+.bash {
+    max-width: 95%;
+    align-self: center;
+}
+
 @media screen and (min-width: 850px){
+    .bash {
+        max-width: 80%;
+        align-self: center;
+    }
     .opsicon {
         width: 3%;
     }

@@ -128,7 +128,7 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color:#fff;font-family:'Raleway',sans-serif;border-width:0px;letter-spacing:10px; font-weight:900;">Testes e<br/><span class="text-primary">Desafios</span></div>
+										style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color:#fff;font-family:'Raleway',sans-serif;border-width:0px;letter-spacing:10px; font-weight:900;">TESTES E<br/><span class="text-primary">DESAFIOS</span></div>
 
 									<!-- LAYER NR. 2 -->
 									<div class="tp-caption   rs-parallaxlevel-4" 
@@ -151,7 +151,7 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 6; white-space: normal; font-size: 17px; line-height: 26px; font-weight: 500; color:#fff;font-family:'Raleway',sans-serif;border-width:0px;">testes e desafios </div>
+										style="z-index: 6; white-space: normal; font-size: 17px; line-height: 26px; font-weight: 500; color:#fff;font-family:'Raleway',sans-serif;border-width:0px;">Alguns testes e desafios propostos. </div>
 										
 									<!-- LAYER NR. 3 -->
 									<div class="tp-caption rev-btn  rs-parallaxlevel-4" 
@@ -183,14 +183,60 @@
 			</div>        
 		</div>        
 	<!-- Slider END -->
-
-		<div class="div-flex">
-			<div class="text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus lorem lorem, non rhoncus lorem eleifend at. Vestibulum viverra pretium erat ac mattis. Phasellus vitae scelerisque quam. Etiam sed diam quis lacus iaculis aliquam. Nunc eleifend, leo sed ornare rhoncus, mauris leo suscipit orci, non mattis lorem dolor sit amet justo. In posuere facilisis enim, sit amet tempor dolor placerat sed. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum a lorem sem. Phasellus in faucibus metus. Proin vitae orci id arcu rutrum tincidunt et eu dui. Vivamus sed malesuada quam. Nam id malesuada magna, eget interdum orci. Duis placerat tempor mi, ullamcorper laoreet lectus condimentum at. Donec nec pellentesque velit, eget faucibus ante.
-			</div>
-
-			<img src="https://png.pngtree.com/png-vector/20200312/ourmid/pngtree-modern-flat-design-concept-of-team-work-design-with-characters-in-png-image_2157888.jpg" alt="">
+	<div class="new-separator">
+		<h2 class="text-uppercase">Usando<span class="text-primary"> o Bash</span></h2>
+		<div class="separator bg-primary"></div>
+	</div>
+	<div style="display: flex; flex-direction: column;">
+		<div class="text " >
+			<p>Um pequeno teste bem conhecido registrado nos cursos do PWK, usando Kali e algumas funções do Bash e outros softwares open source.</p>
+			<p>Como penetration testers, estamos sempre buscando aprimoramentos para minimizar o tempo que é gasto analizando dados, especialmente o volume obtido por vários tipos de varreduras.</p>
+			<p>Vamos supor que você foi designado a fazer uma varredura em uma subnet para identificar os servidores web e determinar qual destes apresenta uma interface passível de ataque, interessante ou não. Usaremos a varredura de portas (Port Scanning) para inspecionar as portas TCP ou UDP numa máquina remota com a intenção de detectar quais serviços estão rodando no alvo e potencialmente quais vetores de ataques existem.</p>
+			<p>No teste colocamos o link deste website, que direciona para o DNS do servidor, não recomendamos que ninguém faça o mesmo, pois é bem provável que os servidores tenham um monitoramento e possa detectar quando e quem direcionou a varredura de portas.</p>
+			<p>Para começar criamos uma pasta temporária, no caso da minha máquina ela já existe.</p>
 		</div>
+		<img class="bash" src="/images/bash/bash01.png" alt=""/>
+		<div class="text " >
+			<p>Agora que temos uma pasta temporária e entramos na pasta usando o comando <b>cd</b>, vamos para a parte de varredura para o endereço do repositório do Github, vamos focar na porta 80 e usaremos o <b>nmap</b> como ferramenta de varredura de portas.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash02.png" alt=""/>
+		<div class="text " >
+			<p>Esse é um tipo bem direto de scan, com a flag <b>-A</b> para scan agressivo, <b>-p</b> para especificar a porta, <b>--open</b> para retornar apenas portas abertas, <b>-oG</b> para salvar o scan em um resultado capaz de ser filtrado com o comando <b>grep</b> do linux.</p>
+			<p>Vamos usar o <b>cat</b> para ver o resultado.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash03.png" alt=""/>
+		<div class="text " >
+			<p>O resultado nos mostra o IP duplicado, vamos usar o <b>grep</b> para escolher as linhas que contém apenas a porta 80.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash04.png" alt=""/>
+		<div class="text " >
+			<p>Conseguimos tirar a duplicação, agora essa primeira linha é irrelevante para nós, usaremos o <b>grep</b> novamente com a flag <b>-v</b> que significa <b>"grep-reverso"</b> mostrando apenas as linhas que não contém a string "Nmap".</p>
+		</div>
+		<img class="bash" src="/images/bash/bash05.png" alt=""/>
+		<div class="text " >
+			<p>A saída já está bem melhor, vamos extrair agora somente o IP necessário, usando <b>awk</b> para imprimir somente o segundo campo, usando o espaço como delimitador.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash06.png" alt=""/>
+		<div class="text " >
+			<p>Ótimo, temos o IP, agora usaremos do <b>cutycapt</b> que é um Qt Webkit web page redenrizador de captura de tela. Usaremos <b>-url</b> para especificar o alvo, e <b>-out</b> para especificar o nome do arquivo de saída.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash07.png" alt=""/>
+		<div class="text " >
+			<p>Quando o loop terminar e tivermos os arquivos, poderemos examinar a lista de saída criada pelo Bash, usando <b>-1</b> com o <b>ls</b>, que lista um arquivo por linha, suprimindo detalhes adicionais.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash08t.png" alt=""/>
+		<div class="text " >
+			<p>Show de bola! Estamos finalizando aqui, poderiamos analisar os arquivos individualmente, mas a melhor escolha é novamente colocar o conhecimento em scripting em prática. Utilizando conhecimentos básicos de scripting e HTML podemos fazer algo bem útil.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash10.png" alt=""/>
+		<div class="text " >
+			<p>Esse script constrói um arquivo em <b>HTML</b> <i>(web.html)</i>, começando com as tags básicas, e então o <b>ls</b> e <b>awk</b> insere cada imagem no formato .PNG em um HTML IMG tag e acrescenta no nosso arquivo web.html.</p>
+			<p>Finalmente, acrescentamos as tags finais do arquivo HTML, fazemos o script executável e vemos no nosso browser o resultado, que é simples e bastante efetivo, nos demonstrando a visualização da página principal de cada servidor.</p>
+		</div>
+		<img class="bash" src="/images/bash/bash11.png" alt=""/>
+
+		</div>
+	
 
 	<!-- Footer -->
 	<footer class="page-footer font-small blue pt-4">
